@@ -1,0 +1,17 @@
+/*Configuración Global*/
+*{
+    background-color: aqua;
+}
+/*Configuración Por elemento*/
+h1{
+    font-size: 50px;
+}
+/*Configuración Por ID*/
+#texto1{
+    
+    color: white;
+}
+/*Configuración por Clase*/
+.botoncito1{
+text-align: center;
+}
