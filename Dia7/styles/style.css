@@ -1,0 +1,9 @@
+@font-face {
+    font-family: nombrecito;
+    src: url('../fonts/renegentchrome.ttf');
+}
+
+h1{
+    font-family: nombrecito;
+    font-weight: bold;
+}
