@@ -1,0 +1,121 @@
+.elemento{
+    background-color: lightblue;
+    width: 20vh;
+    height: 20vh;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    /*Definir la animacion en duración*/
+    transition-delay: 2s;
+    transition-duration: 5s;
+    transition-timing-function:linear;
+}
+
+.elemento:hover{
+    /*Primer ejemplo- Anima todas las propiedades que cambien de estado*/
+    width: 30vh;
+    height: 30vh;
+    background-color: black;
+    
+}
+
+/* HTML: <div class="loader"></div> 
+.loader {
+    width: 45px;
+    aspect-ratio: .75;
+    --c:no-repeat linear-gradient(#d91111 0 0);
+    background: 
+      var(--c) 0%   100%,
+      var(--c) 50%  100%,
+      var(--c) 100% 100%;
+    background-size: 20% 65%;
+    animation: l8 1s infinite linear;
+  }
+  @keyframes l8 {
+    16.67% {background-position: 0% 0%  ,50% 100%,100% 100%}
+    33.33% {background-position: 0% 0%  ,50% 0%  ,100% 100%}
+    50%    {background-position: 0% 0%  ,50% 0%  ,100% 0%  }
+    66.67% {background-position: 0% 100%,50% 0%  ,100% 0%  }
+    83.33% {background-position: 0% 100%,50% 100%,100% 0%  }
+  }
+  */
+
+a{
+    background: black;
+    color: white;
+    padding: 8px;
+    font-size: 30px;
+    /*transition: font-size 3s,background 8s;*/
+    
+    
+    
+}
+a:hover{
+    background: red;
+    font-size: 30px;
+    animation: cambioTexto 5s;
+}
+
+.tercerEjemplo{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    
+}
+.tercerEjemplo:hover{
+    animation: cambiar-color 5s;
+}
+
+.matachito{
+    margin: 0;
+    image-rendering: pixelated;
+    position: relative;
+    width: 60px;
+    height: 100px;
+    background-image: url('../img/attachment-1.png');
+    background-size:cover;
+    bottom: 30px;
+    animation: movimiento .80s steps(3) infinite;
+}
+
+@keyframes movimiento{
+    from{
+background-position: 0px;
+    }
+    to{
+        background-position: -2000px;
+    }
+}
+
+
+@keyframes cambioTexto {
+    0%{
+        font-size: 50px;
+    }
+    35%{
+        font-size: 45px;
+    }
+    100%{font-size: 90px;}
+    
+}
+
+@keyframes cambiar-color{
+    0%{
+        background-color: blue;
+    }
+    10%{
+        background-color: beige;
+    }
+    25%{
+        background-color: blueviolet;
+    }
+    50%{
+        background-color: chartreuse;
+    }
+    75%{
+        background-color: aquamarine;
+    }
+    100%{
+        background-color: black;
+    }
+}
